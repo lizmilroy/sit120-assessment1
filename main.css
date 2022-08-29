@@ -1,0 +1,158 @@
+/* SIT120 Assessment 3 */
+/* Elizabeth Milroy - s222075016 */
+/* main.css - Styles that apply to every page */
+
+/* Body Styles */
+body {
+	color: white;
+	font-family: 'Oswald';
+	background-color: #1F1F20;
+}
+	
+.main-navigation, .main-footer {
+	background-color: #1F1F20;
+}
+
+/* Navigation Styles */
+.main-navigation {
+	display: flex;
+	flex-direction: row;
+}
+
+.nav-list-1, .nav-list-2 {
+	display:flex;
+	margin: 0;
+	list-style: none;
+	align-items: center;
+}
+
+.nav-list-1 {
+	flex:70%;
+	gap: 3rem;
+}
+
+.nav-list-2 {
+	justify-content: flex-end;
+	flex:30%;
+	padding:10px;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+
+/* Main Content Styles */
+.main-content {
+	background-color: #233B41;
+}
+
+/* Secondary Content Styles */
+.secondary-content {
+	background-color: #2F484F;
+    
+}
+
+/*Link Styles */
+a:link {
+	color: white;
+}
+
+a:visited {
+	color: #848383;
+}
+
+/* Footer Styles */
+.social-media {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 3rem;
+	padding-top: 10px;
+}
+
+/*Icon Styles */
+.icon {
+	width: 100%;
+	height: 100%;
+}
+
+/* Media Styles */
+@media (min-width: 1401px) {
+	p {
+		font-size: 1.9em;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 2.9em;
+	}
+
+	.main-navigation {
+		font-size: 2em;
+	}	
+}
+
+
+@media (max-width: 1400px) {
+	p {
+		font-size: 1.8em;
+	}
+
+	h1 {
+		font-size: 2.8em;
+	}
+
+	h2 {
+		font-size: 2.6em;
+	}
+	.main-navigation {
+		font-size: 1.8em;
+	}	
+}
+
+@media (max-width: 900px) {
+	p {
+		font-size: 1.6em;
+	}
+
+	h1 {
+		font-size: 2.6em;
+	}
+
+	h2 {
+		font-size: 2.4em;
+	}
+	.main-navigation {
+		font-size: 1.6em;
+	}	
+}
+
+/* Changes the navigation bar layout for mobile devices */
+@media (max-width: 780px) {
+	p {
+		font-size: 1.5em;
+	}
+
+	h1 {
+		font-size: 2.2em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	.main-navigation {
+		flex-direction: column;
+		font-size: 1.5em;
+	}
+	.nav-list-1{
+		justify-content: center;
+		padding: 0;
+	}
+
+	.nav-list-2 {
+		justify-content: center;
+		gap: 2rem;
+    }
+}

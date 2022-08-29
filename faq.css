@@ -1,0 +1,30 @@
+/* SIT120 Assessment 3 */
+/* Elizabeth Milroy - s222075016 */
+/* faq.css - Styles specfic to the faq.html page */
+
+/* Main Content Styles */
+.main-content {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    gap: 5%;
+}
+
+/* Secondary Content Styles */
+.secondary-content {
+    display:flex;
+    flex-direction: column;
+}
+
+.introduction {
+    flex: 60%;
+}
+
+.aqua-keyboard {
+    background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	max-width: 100%;
+    max-height: 100%;
+}

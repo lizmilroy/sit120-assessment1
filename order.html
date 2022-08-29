@@ -1,0 +1,98 @@
+<!--  SIT120 Assessment 3 -->
+<!-- Elizabeth Milroy - s222075016 -->
+<!-- order.html --> 
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <!-- Stylesheet Links -->
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="order.css" />
+  
+    <!-- Used for @media rules in CSS. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link to the text font used in the website. -->
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
+    <title>Keyboard Building Service</title>
+  </head>
+
+  <body>
+    <!-- Container used to implement flexbox. -->
+    <div class="main-navigation">
+      <!--Two unordered lists are used for the navigation bar. -->
+      <ul class="nav-list-1">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="order.html">Order</a></li>
+      </ul>
+
+      <ul class="nav-list-2">
+        <li>Made by Liz</li>
+        <!-- The mail icon used is a mailto link. This directly opens the users mail client with the email provided. -->
+        <li><a href="mailto: s222075016@deakin.edu.au"><img src="resources/icons/mail-icon.png" class="icon" alt="Email" style="max-width: 48px; max-height: 48px;"></a></li>
+      </ul>
+    </div>
+
+     <!-- Container for all main content. -->
+     <div class="main-content">
+        <!-- This container is used to implement flexbox. -->
+        <div class="introduction">
+            <h1>Ordering</h1>
+            <p>Here is where you can order a custom mechanical keyboard.</p>
+        </div>
+    </div>
+
+    <!-- Container for secondary content. -->
+    <div class="secondary-content">
+      <!-- Wrapper used to implement flexbox. -->
+      <div class="secondary-wrapper">
+        <div class="secondary-intro">
+          <h1>Order Form</h1>
+        </div>
+        
+        <!-- Container to implement flexbox. -->
+        <div class="order-form">
+          <!-- HTML form. Rows and columns are used to implment a two column layout using flexbox. -->
+          <form class="form">
+            <div class="form-row-1">
+              <div class="column">
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="addr">Address:</label><br>
+                <input type="text" id="addr name="addr"><br>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="column">
+                <label for="lname2">Last Name:</label><br>
+                <input type="text" id="lname2" name="name2"><br>
+
+                <label for="state">State:</label><br>
+                <input type="text" id="state" name="state"><br>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contains the webpages footer. -->
+    <div class="main-footer">
+        <footer>
+          <!-- Div used to implement flexbox in CSS. The images link to their respective social media websites. -->
+          <div class="social-media">
+            <a href="https://twitter.com"><img src="resources/icons/twitter-icon.png" class="icon" alt="Twitter" style="max-width: 48px; max-height: 48px;"></a>
+            <a href="https://instagram.com"><img src="resources/icons/instagram-icon.png" class="icon" alt="Instagram" style="max-width: 48px; max-height: 48px;"></a>
+            <a href="https://facebook.com"><img src="resources/icons/facebook-icon.png" class="icon" alt="Facebook" style="max-width: 48px; max-height: 48px;"></a>
+          </div>
+        </footer>
+      </div>
+    </body>
+  
+  </html>
