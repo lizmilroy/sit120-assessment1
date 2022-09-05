@@ -11,14 +11,22 @@
     gap: 5%;
 }
 
+.introduction {
+    flex: 60%;
+}
+
 /* Secondary Content Styles */
 .secondary-content {
     display:flex;
-    flex-direction: column;
+    justify-content: center;
+
 }
 
-.introduction {
-    flex: 60%;
+.secondary-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 80%;
 }
 
 .aqua-keyboard {

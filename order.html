@@ -58,24 +58,113 @@
         <div class="order-form">
           <!-- HTML form. Rows and columns are used to implment a two column layout using flexbox. -->
           <form class="form">
-            <div class="form-row-1">
-              <div class="column">
-                <label for="fname">First Name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
+            <div class="section1">
+              <h3>Personal Information</h3>
+              <div class="col1">
 
-                <label for="addr">Address:</label><br>
-                <input type="text" id="addr name="addr"><br>
+                <div class="input-wrapper">
+                  <label for="fname">First Name:</label><br>
+                  <input type="text" id="fname" name="fname">
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="addr">Address:</label><br>
+                  <input type="text" id="addr" name="addr"><br>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="postcode">Post Code:</label><br>
+                  <input type="text" id="postcode" name="postcode" maxlength="4">
+                </div>
+
+              </div>
+
+              <div class="col2">
+                <div class="input-wrapper">
+                  <label for="lname2">Last Name:</label><br>
+                  <input type="text" id="lname2" name="name2"><br>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="state">State:</label><br>
+                  <select name="state" id="state" from="state">
+                    <option value="vic">VIC</option>
+                    <option value="nsw">NSW</option>
+                    <option value="sa">SA</option>
+                    <option value="qld">QLD</option>
+                    <option value="nt">NT</option>
+                    <option value="tas">TAS</option>
+                  </select>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="email">Email Address:</label>
+                  <input type="email" id="email" name="email">
+                </div>
               </div>
             </div>
 
-            <div class="form-row-2">
-              <div class="column">
-                <label for="lname2">Last Name:</label><br>
-                <input type="text" id="lname2" name="name2"><br>
+            <div class="section2">
+              <h3>Keyboard Information</h3>
 
-                <label for="state">State:</label><br>
-                <input type="text" id="state" name="state"><br>
+              <div class="col1">
+                <div class="input-wrapper">
+                  <label for="case">Case:</label><br>
+                  <input type="text" id="case" name="case">
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="switches">Switches:</label><br>
+                  <input type="text" id="switches" name="switches">
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="keycaps">Keycaps:</label><br>
+                  <input type="text" id="keycaps" name="keycaps">
+                </div>
               </div>
+
+              <div class="col2">
+                <div class="input-wrapper">
+                  <label for="layout">Layout:</label><br>
+                  <input type="text" id="layout" name="layout">
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="stabilizers">Stabilizers:</label>
+                  <input type="text" id="stabilizers" name="stabilizers">
+                </div>
+
+                <div class="input-wrapper-radio">
+                  <div class="title">Lube Preferences:</div>
+                    <div class="radio">
+                      <div class="col1">
+                        <div class="radio=wrapper">
+                          <label for="lube">Lube</label>
+                          <input type="radio" id="lube" name="preferences" value="lube">
+                        </div>
+                        <div class="radio-wrapper">
+                          <label for="films">Films</label>
+                          <input type="radio" id="films" name="preferences" value="films">
+                        </div>
+
+                      </div>
+
+                      <div class="col2">
+                        <div class="radio-wrapper">
+                          <label for="lube-films">Lube & Films</label>
+                          <input type="radio" id="lube-films" name="preferences" value="lube-films">
+                        </div>
+                        <div class="radio-wrapper">
+                          <label for="none">None</label>
+                          <input type="radio" id="none" name="preferences" value="none">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </form>
         </div>
