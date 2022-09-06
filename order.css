@@ -40,11 +40,13 @@
 .section1 input, .section2 input {
 	border: 2px solid black;
 }
-.section1 h3, .section2 h3 {
+
+.section1 h3, .section2 h3, .section3 h3 {
 	width: 100%;
 	border-bottom: 3px solid black;
 	padding-left: 5%;;
 }
+
 .col1, .col2 {
 	display: flex;
 	flex-direction: column;
@@ -52,7 +54,25 @@
 	align-items: stretch;
 }
 
+.col1 p, .col2 p {
+	padding-left: 10%;
+	padding-right: 10%;
+}
 
+.check-form .col2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.input-wrapper, .input-wrapper-radio {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 5%;
+}
+
+.input-wrapper input, select{
+	width: 100%;
+}
 
 .radio {
 	display: flex;
@@ -60,13 +80,25 @@
 	flex-wrap: wrap;
 }
 
-
-.input-wrapper, .input-wrapper-radio {
-	padding-left: 10%;
-	padding-right: 10%;
-	padding-bottom: 5%;
-}
-.input-wrapper input, select{
-	width: 100%;
+.check-form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
+.buttons {
+	padding-top: 5%;
+	display:flex;
+	align-self: center;
+	gap:10%;
+}
+
+.buttons input {
+	border: 2px solid black;
+	font-size: 20px;
+}
+
+textarea {
+	resize: none;
+	border: 2px solid black;
+}

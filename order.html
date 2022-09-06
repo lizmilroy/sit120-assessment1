@@ -61,7 +61,7 @@
             <div class="section1">
               <h3>Personal Information</h3>
               <div class="col1">
-
+                <!-- Containers are used for each label/input pair for easy styling in CSS> -->
                 <div class="input-wrapper">
                   <label for="fname">First Name:</label><br>
                   <input type="text" id="fname" name="fname">
@@ -76,13 +76,12 @@
                   <label for="postcode">Post Code:</label><br>
                   <input type="text" id="postcode" name="postcode" maxlength="4">
                 </div>
-
               </div>
 
               <div class="col2">
                 <div class="input-wrapper">
                   <label for="lname2">Last Name:</label><br>
-                  <input type="text" id="lname2" name="name2"><br>
+                  <input type="text" id="lname" name="lname"><br>
                 </div>
 
                 <div class="input-wrapper">
@@ -164,7 +163,31 @@
                   </div>
                 </div>
               </div>
+            
+            <div class="section3">
+              <h3>Submit Order</h3>
+              <p>Check your order before you submit it.</p>
+            
+              <div class="check-form">
+                <div class="col1">
+                  <!-- Vue will be used to fill in this information. -->
+                  <p>Name: {{ fname }} {{ lname }}</p>
+                  <p>Address: {{ addr }} {{ state }} {{ postcode }} </p>
+                  <p>Email: {{ email }}</p>
+                  <p>Keyboard: {{ case }} {{ layout }} {{ switches }} {{ stabilizers }} {{ keycaps }} {{ lube }} </p>
+                </div>
 
+                <div class="col2">
+                  <div class="input-wrapper">
+                    <label for="additional">Additional Notes:</label><br>
+                    <textarea id="additional" name="additional" rows="12" cols="84"></textarea>
+                  </div>
+                  <div class="buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                  </div>
+                </div>
+              </div>
             </div>
           </form>
         </div>
