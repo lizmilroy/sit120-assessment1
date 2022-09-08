@@ -6,6 +6,7 @@
 .main-content {
 	display: flex;
 	justify-content: center;
+	padding-bottom: 2%;
 }
 
 .introduction {
@@ -25,19 +26,13 @@
 .secondary-wrapper {
 	display: flex;
 	flex-direction: column;
-	padding: 60px;
+	padding-top: 2%;
 	width: 80%;
 	height: 80%;
 }
 
 /* Form Styles */
-.section1, .section2 {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.section1 input, .section2 input {
+.section1-content input, .section2-content input, select {
 	border: 2px solid black;
 }
 
@@ -47,58 +42,160 @@
 	padding-left: 5%;;
 }
 
-.col1, .col2 {
-	display: flex;
-	flex-direction: column;
-	flex: 50%;
-	align-items: stretch;
-}
-
-.col1 p, .col2 p {
-	padding-left: 10%;
-	padding-right: 10%;
-}
-
-.check-form .col2 {
+.section1-content, .section2-content {
 	display: flex;
 	flex-direction: column;
 }
 
-.input-wrapper, .input-wrapper-radio {
-	padding-left: 10%;
-	padding-right: 10%;
-	padding-bottom: 5%;
+.section3-content {
+	display: flex;
+	flex-direction: row;
 }
 
-.input-wrapper input, select{
+.input-wrapper input, select {
 	width: 100%;
 }
 
+.input-wrapper, .input-wrapper-radio, .radio, .col1, .col2 {
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 5%;
+}
+
+.row1, .row2, .row3, .radio-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.radio-row1, .radio-row2, .col1, .col2 {
+	flex: 50%;
+}
+
+.input-wrapper, .input-wrapper, .input-wrapper, .radio {
+	flex: 50%;
+}
+
+/* Section 2 Specific Styles*/
 .radio {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-direction: column;
 }
 
-.check-form {
+.radio-wrapper {
+	padding-left: 2%;
+}
+
+/* Section 3 Specific Styles */
+.buttons {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.buttons {
-	padding-top: 5%;
-	display:flex;
-	align-self: center;
-	gap:10%;
+	justify-content: center;
+	gap: 5%;
+	padding-top: 5%;;
 }
 
 .buttons input {
 	border: 2px solid black;
-	font-size: 20px;
+	font-size: 1.3em;
+	padding: 1%;
+}
+
+/* Input/Button/Text Area Styles*/
+input[type=text]:focus, input[type=email]:focus {
+	background-color: lightgrey;
+}
+
+input, textarea {
+	outline: none;
 }
 
 textarea {
 	resize: none;
 	border: 2px solid black;
+	width: 100%;
+}
+
+
+/* Media Styles */
+@media (min-width: 1401px) {
+	input, select, option {
+		font-size: 1.1em;
+		padding: 0.5%;
+	}
+
+	.form label, .title, p  {
+		font-size: 1.7em;
+	}
+
+	.radio-input-wrapper label {
+		font-size: 1.6em;
+	}
+}
+
+@media (max-width: 1400px) {
+	input, select, option {
+		font-size: 1.0em;
+		padding: 0.7%;
+	}
+
+	.form label, .title, p {
+		font-size: 1.5em;
+	}
+}
+
+@media (max-width: 1000px) {
+	input, select, option {
+		font-size: 1em;
+		padding: 2%;
+	}
+
+	.form label, .check-form p {
+		font-size: 1.4em;
+	}
+
+	.input-wrapper, .input-wrapper-radio, .radio, .col1, .col2 {
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+@media (max-width: 780px) {
+	.row1, .row2, .row3, .section3-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.radio-row1, .radio-row2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 20%;
+		padding-left: 0px;
+		padding-top: 2%;
+	}
+
+	input, select, option {
+		padding: 1.5%;
+	}
+
+	.radio-input-wrapper label {
+		font-size: 1.4em;
+	}
+} 
+
+/* Extra Media rule to prevent text wrapping. */
+@media (max-width: 610px) {
+	.radio-row1, .radio-row2 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.radio-input-wrapper label {
+		font-size: 1.4em;
+	}
+
+	.buttons input {
+		padding: 1.5%;
+	}
 }
